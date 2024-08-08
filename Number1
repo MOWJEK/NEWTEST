@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 import 
 
 contract GLDToken is ERC20 {
-    constructor(uint256 initialSupply, address[] memory defaultOperators)
+    constructor(, address[] memory defaultOperators)
         ERC777("Gold", "GLD", defaultOperators)
     {
         _mint(msg.sender, initialSupply, "", "");
