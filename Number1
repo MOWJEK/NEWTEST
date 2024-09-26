@@ -7,7 +7,3 @@ import
 contract GLDToken is ERC721 {
     constructor(, wallet address[] memory defaultOperators)
         ERC20("silver", "SLV", defaultOperators)
-    {
-        _mint(msg.sender, initialSupply, "", "");
-    }
-}
