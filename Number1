@@ -18,8 +18,5 @@ contract SimpleStorage {
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import 
-
-contract GLDToken is ERC721 {
-    constructor(, wallet address[] memory defaultOperators)
+]
         ERC20("silver", "SLV", defaultOperators)
