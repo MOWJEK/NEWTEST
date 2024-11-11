@@ -1,22 +1,36 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract SimpleStorage {
-    uint256 private storedData;
+contract number1 {
+    // Private variable to store a number
+    uint256 private number;
 
-    // Function to store a number
-    function set(uint256 _x) public {
-        storedData = _x;
+    // Event to emit when the number is updated
+    event NumberUpdated(uint256 oldNumber, uint256 newNumber);
+
+    // Function to set the value of `number`
+    function setNumber(uint256 _number) public {
+        uint256 oldNumber = number;
+        number = _number;
+        emit NumberUpdated(oldNumber, _number);
     }
 
-    // Function to retrieve the stored number
-    function get() public view returns (uint256) {
-        return storedData;
+    // Function to retrieve the current value of `number`
+    function getNumber() public view returns (uint256) {
+        return number;
+    }
+    
+    // Function to increment `number` by a specified value
+    function incrementNumber(uint256 incrementValue) public {
+        uint256 oldNumber = number;
+        number += incrementValue;
+        emit NumberUpdated(oldNumber, number);
+    }
+
+    // Function to reset `number` to zero
+    function resetNumber() public {
+        uint256 oldNumber = number;
+        number = 0;
+        emit NumberUpdated(oldNumber, number);
     }
 }
-// contracts/GLDToken.sol
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-]
-        ERC20("silver", "SLV", defaultOperators)
