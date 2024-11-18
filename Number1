@@ -9,9 +9,9 @@ contract number1 {
     event NumberUpdated(uint256 oldNumber, uint256 newNumber);
 
     // Function to set the value of `number`
-    function setNumber(uint256 _number) public {
-        uint256 oldNumber = number;
-        number = _number;
+    function setNumber (uint256 _number)  public {
+        uint256 oldNumber  = number;
+        number = _number ;
         emit NumberUpdated(oldNumber, _number);
     }
 
