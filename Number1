@@ -1,10 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-
 contract number1 {
     // Private variable to store a number
     uint256 private number;
-
     // Event to emit when the number is updated
     event NumberUpdated(uint256 oldNumber, uint256 newNumber);
 
