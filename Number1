@@ -25,15 +25,3 @@ contract number1 {
         emit NumberUpdated(oldNumber, number);
   
   }
-
-    
-
-   // Function to reset `number` to zero
-    function resetNumber() public {
-        uint256 oldNumber = number;
-        number = 0;
-
-
-}
-
-
