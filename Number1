@@ -21,7 +21,3 @@ contract number1 {
     // Function to increment `number` by a specified value
     function incrementNumber(uint256 incrementValue) public {
         uint256 oldNumber = number;
-        number += incrementValue;
-        emit NumberUpdated(oldNumber, number);
-  
-  }
